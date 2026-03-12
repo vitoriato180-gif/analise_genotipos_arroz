@@ -1,0 +1,71 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: nova_form
+   Data: data
+Control: lmerControl(optimizer = "bobyqa")
+
+REML criterion at convergence: 5310.5
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.96119 -0.58182 -0.01375  0.62550  2.26519 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ GEN:LOC  (Intercept)  47932   218.9   
+ GEN      (Intercept) 103031   321.0   
+ Residual             778399   882.3   
+Number of obs: 367, groups:  GEN:LOC, 15; GEN, 9
+
+Fixed effects:
+                             Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                  50839.35    7809.08     312.90   6.510 2.98e-10 ***
+LOCITAP_MA                     742.15     313.50      20.30   2.367 0.027955 *  
+AD_UM                        -2453.84     394.38     308.88  -6.222 1.60e-09 ***
+veg_T2M_iqr                   1303.70     438.78     307.88   2.971 0.003200 ** 
+veg_T2M_p10_prop             39557.53   13092.21     313.34   3.021 0.002723 ** 
+veg_T2M_MIN_median            4290.93     704.40     305.45   6.092 3.36e-09 ***
+veg_T2M_MAX_mean              5060.51     777.38     304.07   6.510 3.10e-10 ***
+veg_T2M_MAX_median           -1864.00     252.28     310.78  -7.389 1.38e-12 ***
+veg_T2M_MAX_p90_prop       -105907.20   12258.06     313.73  -8.640 2.92e-16 ***
+veg_T2M_MAX_p10_prop         62803.81   14184.03     312.60   4.428 1.32e-05 ***
+veg_PRECTOTCORR_p10_prop      9861.27    4502.68     311.67   2.190 0.029259 *  
+veg_RH2M_median               -273.09      41.96     311.78  -6.508 3.04e-10 ***
+veg_GWETROOT_mean           -28843.39    5288.74     311.70  -5.454 1.01e-07 ***
+veg_GWETROOT_median          19207.17    4593.89     313.55   4.181 3.77e-05 ***
+veg_GWETROOT_iqr            -11111.36    1879.24     310.04  -5.913 8.88e-09 ***
+veg_EVPTRNS_p10_prop         13642.73    3589.49     312.97   3.801 0.000173 ***
+veg_WS2M_mean                 2586.31     494.81     306.19   5.227 3.20e-07 ***
+veg_WS2M_p90_prop             8205.25    3913.96     313.14   2.096 0.036848 *  
+veg_CDD0_iqr                 -1417.22     452.54     309.61  -3.132 0.001904 ** 
+veg_CDD0_cumulative          -8216.15    1442.16     304.45  -5.697 2.87e-08 ***
+repro_T2M_MIN_mean          344628.66   47614.62     306.78   7.238 3.68e-12 ***
+repro_T2M_MAX_mean          344484.75   47589.73     306.80   7.239 3.66e-12 ***
+repro_T2M_MAX_iqr              518.50     146.36     313.31   3.543 0.000456 ***
+repro_T2M_MAX_p90_prop      -58120.18   15734.88     306.76  -3.694 0.000262 ***
+repro_PRECTOTCORR_iqr          -61.33      26.51     307.69  -2.314 0.021337 *  
+repro_PRECTOTCORR_p10_prop   11346.45    4048.31     312.11   2.803 0.005384 ** 
+repro_GWETROOT_mean          13268.33    1631.22     310.41   8.134 1.01e-14 ***
+repro_GWETROOT_iqr           14191.49    3075.70     311.50   4.614 5.78e-06 ***
+repro_EVPTRNS_median           194.58      59.01     310.81   3.297 0.001089 ** 
+repro_EVPTRNS_iqr             -258.94      81.16     308.28  -3.190 0.001567 ** 
+repro_EVPTRNS_p90_prop       79244.22   25574.00     311.26   3.099 0.002122 ** 
+repro_WS2M_cumulative        -2892.33     527.47     306.74  -5.483 8.73e-08 ***
+repro_WS2M_p10_prop           5702.92    2209.99     309.63   2.581 0.010325 *  
+repro_CDD0_mean            -689092.66   95261.45     306.79  -7.234 3.78e-12 ***
+gf_T2M_mean                    632.91     207.05     309.96   3.057 0.002432 ** 
+gf_T2M_iqr                    1416.64     236.02     304.97   6.002 5.52e-09 ***
+gf_T2M_MIN_mean              -1012.02     276.52     314.28  -3.660 0.000296 ***
+gf_T2M_MIN_iqr               -1799.08     227.54     312.16  -7.907 4.60e-14 ***
+gf_T2M_MIN_p90_prop         -53934.13    8513.44     309.18  -6.335 8.36e-10 ***
+gf_T2M_MAX_p90_prop         -33711.65   14377.87     304.94  -2.345 0.019684 *  
+gf_RH2M_p10_prop             62104.10   18797.29     304.03   3.304 0.001067 ** 
+gf_EVPTRNS_p90_prop          33391.91   16280.46     305.98   2.051 0.041114 *  
+gf_WS2M_iqr                  -2139.85     701.55     309.65  -3.050 0.002485 ** 
+gf_WS2M_p90_prop            -16983.43    3785.12     305.15  -4.487 1.03e-05 ***
+gf_WS2M_p10_prop             -5660.54    2124.94     304.61  -2.664 0.008136 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+fit warnings:
+fixed-effect model matrix is rank deficient so dropping 3 columns / coefficients
+Some predictor variables are on very different scales: consider rescaling. 
+You may also use (g)lmerControl(autoscale = TRUE) to improve numerical stability.
